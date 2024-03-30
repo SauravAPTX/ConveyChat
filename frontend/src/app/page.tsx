@@ -64,14 +64,13 @@ const Home = () => {
   <div className="mb-8 text-center">
     <h2 className="text-3xl font-semibold mb-4 text-purple-600">Features</h2>
   </div>
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4    justify-center items-center">
     {cardData.map((card, index) => (
       <CardEffect
         key={index}
         title={card.title}
         description={card.description}
         imageUrl={card.imageUrl}
-        className="p-4 bg-white rounded-lg shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
       />
     ))}
   </div>
