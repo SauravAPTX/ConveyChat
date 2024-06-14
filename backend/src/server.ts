@@ -91,8 +91,6 @@
 
 // const Redis = require("ioredis");
 
-// const redisUri: string = 
-
 // const redis = new Redis(redisUri);
 
 // async function manageKeyValue() {
@@ -208,5 +206,5 @@ app.get('/', (req, res) => res.send('Chat App Server'));
 app.get('/message', (req, res) => res.send('Message Server'));
 
 server.listen(3001, () => {
-  console.log(`Server started on this http://localhost:3001`);
+  console.log(`Server started on http://localhost:3001`);
 });

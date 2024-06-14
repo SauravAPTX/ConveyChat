@@ -159,5 +159,5 @@ app.get('/messages', (req, res) => __awaiter(void 0, void 0, void 0, function* (
 app.get('/', (req, res) => res.send('Chat App Server'));
 app.get('/message', (req, res) => res.send('Message Server'));
 server.listen(3001, () => {
-    console.log(`Server started on this http://localhost:3001`);
+    console.log(`Server started on http://localhost:3001`);
 });
