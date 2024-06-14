@@ -1,5 +1,6 @@
 import { CardEffect } from '@/components/CardEffect';
 import { SignupForm } from '@/components/SignUpForm';
+import Link from 'next/link';
 import React from 'react';
 
 
@@ -42,13 +43,15 @@ const Home = () => {
   return (
     <div className="bg-gray-200 min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-purple-600 text-white">
+      <section className="py-20 bg-purple-600 text-white h-screen">
         <div className="py-10 max-w-6xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-8 mb-6 md:mb-0">
               <h2 className="text-4xl font-bold mb-4">Secure Connections, Confident Conversations</h2>
               <p className="text-lg mb-6">Convey ensures your conversations are always private and secure.</p>
-              <button className="bg-white text-purple-600 font-semibold py-3 px-8 rounded-full shadow-lg focus:outline-none focus:shadow-outline hover:bg-purple-400 hover:text-white">Get Started</button>
+             <button className="bg-white text-purple-600 font-semibold py-3 px-8 rounded-full shadow-lg focus:outline-none focus:shadow-outline hover:bg-purple-400 hover:text-white">
+        <Link href="/#join">Get Started</Link>
+      </button>
             </div>
             <div className="md:w-1/3 relative">
     <img src="/img/Secure.jpg" alt="Secure Connections" className="w-full h-auto" />
@@ -64,7 +67,7 @@ const Home = () => {
   <div className="mb-8 text-center">
     <h2 className="text-3xl font-semibold mb-4 text-purple-600">Features</h2>
   </div>
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4    justify-center items-center">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 justify-center items-center">
     {cardData.map((card, index) => (
       <CardEffect
         key={index}
@@ -79,7 +82,7 @@ const Home = () => {
 
   
       {/* CTA Section */}
-      <section className="bg-purple-600 py-16 text-center text-white">
+      <section id='join' className="bg-purple-600 py-16 text-center text-white h-screen">
   <div className="max-w-6xl mx-auto px-4">  
     <div className="lg:flex lg:items-center lg:justify-between">
       <div>
